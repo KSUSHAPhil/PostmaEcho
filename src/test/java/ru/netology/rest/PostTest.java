@@ -12,14 +12,13 @@ class PostTest {
     void postBin() {
         given()
                 .baseUri("https://postman-echo.com")
-                .body("blablabla") // отправляемые данные (заголовки и query можно выставлять аналогично)
-// Выполняемые действия
+                .contentType("text/plain")
+                .body("number, balance, id")
                 .when()
                 .post("/post")
-// Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("blablabla"));
+                .body("data", equalTo("number, balance, id"))
         ;
     }
 }

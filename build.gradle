@@ -14,7 +14,11 @@ repositories {
 }
 
 dependencies {
+<<<<<<< HEAD
     testImplementation 'org.junit.jupiter:junit-jupiter:5.6.1'
+=======
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.1'
+>>>>>>> ef123af25de961222c92c521227665163b7bfde9
     testImplementation 'io.rest-assured:rest-assured:4.3.0'
 }
 
